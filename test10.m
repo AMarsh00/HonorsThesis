@@ -108,8 +108,8 @@ finalSaveREM(size(saveData1,2)+size(saveDataCB,2)+size(saveDataCR,2)+size(RemDat
 finalSaveReg(size(saveData2,2)+size(saveDataCB,2)+size(saveDataCR,2)+69) = size(saveDataCR,2)/100;
 finalSaveReg(size(saveData2,2)+size(saveDataCB,2)+size(saveDataCR,2)+70) = size(saveDataCB,2)/100;
 
-fID1 = fopen('C:\Users\Ajkmcurator\Downloads\test.txt', 'w');
-fID2 = fopen('C:\Users\Ajkmcurator\Downloads\testREM.txt', 'w');
+fID1 = fopen('FILEPATH\test.txt', 'w');
+fID2 = fopen('FILEPATH\testREM.txt', 'w');
 for i=1:size(finalSaveReg,2)
     fprintf(fID1,[num2str(finalSaveReg(i)),' ']);
 end
